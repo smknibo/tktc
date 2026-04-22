@@ -2421,7 +2421,7 @@ async function renderStudentDashboard(container) {
 
     <h3 style="margin-bottom:16px;">📚 Lanjutkan Belajar</h3>
     <div class="module-grid">
-      ${modules.map(mod => renderModuleCard(mod, progress)).join('')}
+      ${modules.slice(1, 6).map(mod => renderModuleCard(mod, progress)).join('')}
     </div>
   `;
 }
