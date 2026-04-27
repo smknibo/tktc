@@ -2276,10 +2276,10 @@ async function handleSignup(e) {
     password,
     name,
     role: 'student',
-    status: 'pending',
+    status: 'Active',
     createdAt: new Date().toISOString()
   });
-  showAuthMsg('success', 'Pendaftaran berhasil! Tunggu persetujuan Guru untuk bisa login.');
+  showAuthMsg('success', 'Pendaftaran berhasil! Silahkan login.');
   document.getElementById('signup-form').reset();
 }
 
